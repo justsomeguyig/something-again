@@ -1,0 +1,54 @@
+main.py
+print('Hello World!')
+mode = 0
+import time
+import sys
+hi_list = ['hi', 'hi.', 'Hi', 'Hi.']
+bye_list = ['bye', 'bye.', 'Bye', 'Bye.']
+L_list = ['l', 'L', 'l.', 'L.']
+shutdown_list = ['shutdown', 'shutdown.', 'Shutdown', 'Shutdown.']
+ans = input('I work! Say hi! ').strip()
+
+if ans in hi_list:
+    print('Thank you!')
+elif ans in bye_list:
+    print('RUDE.')
+    mode = 1
+elif ans == ('error404'):
+    print('WHAT HAVE YOU DONE.')
+    time.sleep(1)
+    for i in range(100):
+        print('ERROR404')
+    sys.exit(1)
+elif ans in shutdown_list:
+    print('Shutting down in 3')
+    time.sleep(1)
+    print('2')
+    time.sleep(1)
+    print('1')
+    time.sleep(1)
+    print('Shutting down.')
+    time.sleep(.5)
+    print('.')
+    time.sleep(.5)
+    print('..')
+    time.sleep(.5)
+    print('..')
+    time.sleep(.5)
+    sys.exit(0)
+else:
+    print('aw')
+if mode == (1):
+    yap = input()
+    if yap in L_list:
+        print('Im not gonna talk to you anymore, thats just so rude!')
+        time.sleep(3)
+        exit()
+    elif yap == ('error404'):
+        print('WHAT HAVE YOU DONE.')
+        time.sleep(1)
+        for i in range(100):
+            print('ERROR404')
+    else:
+        print('nah dud im gonna not talk until u run me again')
+        exit()
